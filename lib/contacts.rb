@@ -15,7 +15,8 @@ require 'pry'
    }
 
 def remove_strawberry(contacts)
-if contacts[favorite_ice_cream_flavors] == "strawberry"
-  puts contacts
+if contacts[:favorite_ice_cream_flavors].include?("strawberry")
+  delete contacts[:favorite_ice_cream_flavors]["strawberry"]
+  return contacts
 end
 end
