@@ -16,5 +16,6 @@ require 'pry'
 
 def remove_strawberry(contacts)
 if contacts[favorite_ice_cream_flavors] == "strawberry"
-  
+  puts contacts
+end
 end
